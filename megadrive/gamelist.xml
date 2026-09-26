@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Snow Bros.zip</path>
+		<name>Snow Bros</name>
+		<favorite>true</favorite>
+	</game>
+</gameList>

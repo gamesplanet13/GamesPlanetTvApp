@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Kensei - Sacred Fist (USA).chd</path>
+		<name>Kensei - Sacred Fist (USA)</name>
+		<favorite>true</favorite>
+	</game>
+	<game>
+		<path>./Rival Schools.chd</path>
+		<name>Rival Schools</name>
+		<favorite>true</favorite>
+	</game>
+	<game>
+		<path>./Road Rash (USA).chd</path>
+		<name>Road Rash (USA)</name>
+		<favorite>true</favorite>
+	</game>
+	<game>
+		<path>./Soul Blade.chd</path>
+		<name>Soul Blade</name>
+		<favorite>true</favorite>
+	</game>
+	<game>
+		<path>./Tekken 3.chd</path>
+		<name>Tekken 3</name>
+		<favorite>true</favorite>
+		<playcount>1</playcount>
+		<lastplayed>20141231T220229</lastplayed>
+		<gametime>54</gametime>
+	</game>
+	<game>
+		<path>./Tekken 3 MODED.bin</path>
+		<name>Tekken 3 MODED</name>
+		<favorite>true</favorite>
+	</game>
+	<game>
+		<path>./Tekken 3 (USA).chd</path>
+		<name>Tekken 3 (USA)</name>
+		<favorite>true</favorite>
+	</game>
+	<game>
+		<path>./Bloody Roar II.chd</path>
+		<name>Bloody Roar II</name>
+		<favorite>true</favorite>
+	</game>
+	<game>
+		<path>./Tekken 3 (USA) (Track 1).bin</path>
+		<name>Tekken 3 (USA) (Track 1)</name>
+		<favorite>true</favorite>
+		<playcount>7</playcount>
+		<lastplayed>20141231T220657</lastplayed>
+		<gametime>1397</gametime>
+	</game>
+	<game>
+		<path>./Dead or Alive.chd</path>
+		<name>Dead or Alive</name>
+		<favorite>true</favorite>
+		<playcount>1</playcount>
+		<lastplayed>20141231T220126</lastplayed>
+		<gametime>13</gametime>
+	</game>
+	<game>
+		<path>./CTR - Crash Team Racing (USA).chd</path>
+		<name>CTR - Crash Team Racing (USA)</name>
+		<favorite>true</favorite>
+	</game>
+</gameList>
