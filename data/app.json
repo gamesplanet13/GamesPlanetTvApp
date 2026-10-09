@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "brand": "Games Planet",
+  "default_theme": "kratos",
+  "sync_minutes": 15,
+  "core_defaults": {
+    "PS1": "pcsx_rearmed",
+    "Arcade": "mame2010",
+    "FBNeo": "fbneo",
+    "NES": "fceumm",
+    "Master System": "genesis_plus_gx",
+    "Mega Drive": "genesis_plus_gx",
+    "PSP": "ppsspp"
+  }
+}
