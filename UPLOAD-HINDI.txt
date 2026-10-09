@@ -1,0 +1,16 @@
+GAMES PLANET TV — GitHub DATA PACK
+
+1. ZIP खोलें। data, themes, tools और .github folders, index.html और Games_Planet_TV.apk को अपने GamesPlanetTvApp repository के ROOT में upload करें। पुराने ROM folders हटाना नहीं है।
+2. GitHub → Settings → Pages → Source में GitHub Actions चुनें। इस package की workflow generated data और themes को Pages पर publish करती है। आपकी existing Pages address वही रहती है।
+3. पहली upload के बाद Actions → Update game and theme catalogs → Run workflow चलाएँ। यह केवल GitHub का बटन है; TV पर command की जरूरत नहीं।
+4. आगे सही system folder में ROM डालें, जैसे psx, mame, fbneo, nes, genesis, mastersystem, Psp। themes/ में theme ZIP डालें। हर main push पर Actions सूची बनाएगा। ZIP में theme.xml होना चाहिए। Themes के colour/fire assets ZIP से ही लिए जाते हैं।
+5. साथ वाला Games_Planet_TV.apk पुरानी app के ऊपर install करें। RetroArch और अपने cores एक बार setup करें। नीचे toolbar हट गई है। ऊपर छोटा Settings बटन है; launcher में gamepad START भी Settings खोलता है। Settings → Live themes → Download themes from GitHub.
+6. नया gamepad पहचानने पर Configure या automatic mapping मिलेगा। Settings → Controllers से दोबारा mapping कर सकते हैं। Face buttons की physical positions दिखती हैं। किसी पहले mapped button को 1 second दबाकर missing control skip करें। Mapping launcher और अगले RetroArch game launch के लिए saved रहती है। START केवल launcher में Settings खोलता है; game में वह START ही है।
+7. Data check background में लगभग हर 15 minute होता है; Android network/battery restrictions के कारण देर हो सकती है। App पहले cached menu खोलता है। Game चुनने पर ROM download होती है; पूरी library अपने आप download नहीं होती। डाउनलोड और USB games की local copies रहती हैं। ROM/BIOS delete नहीं होते।
+8. पहली बार BIOS जरूरत हो तो Settings → BIOS from USB से अपना folder चुनें। Game-specific BIOS RetroArch core पर निर्भर है। PS2 के लिए अलग emulator चाहिए; इस APK में PS2 core नहीं है।
+9. data/app.json में brand और core_defaults बदल सकते हैं। अपनी manually चुनी core setting cloud defaults से ऊपर रहती है। Games में metadata edit करना हो तो system/gamelist.xml edit करें; auto generator games.json को regenerate करता है।
+10. GitHub Actions disabled हो या workflow upload permissions न हों तो tools/build_indexes.py चलाकर बने data/games.json और themes/index.json upload कर सकते हैं। Data manifest का structure साथ में SCHEMA.md में है।
+
+पहली बार इस package की themes GitHub पर upload होना जरूरी है, तभी online download चलेगा। Bundled Kratos और Scorpion पहले से offline हैं। Offline में old cache चलता रहेगा। Controller mapping cloud data से reset नहीं होती।
+
+यह Android frontend है जो installed RetroArch को game launch देता है। APK compilation, package/signature और catalog checks हुए हैं; असली TV/gamepad gameplay अभी इस environment में test नहीं हुआ है।
