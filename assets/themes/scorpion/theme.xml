@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <view name="basic, detailed, video">
+    <image name="background" extra="true"><path>./assets/background.jpg</path><pos>0 0</pos><size>1 1</size><zIndex>0</zIndex></image><video name="gp_live_background" extra="true"><path>./assets/live-background.mp4</path><pos>0 0</pos><size>1 1</size><zIndex>1</zIndex><origin>0 0</origin><delay>0</delay><effect>none</effect></video><textlist name="gamelist">
+      <pos>.65 .175</pos>
+      <size>.29 .69</size>
+      <fontPath>./assets/font.ttf</fontPath>
+      <fontSize>.027</fontSize>
+      <primaryColor>EAF3FFFF</primaryColor>
+      <secondaryColor>A7B4CCFF</secondaryColor>
+      <selectedColor>FFFFFFFF</selectedColor>
+      <selectorColor>C97A16DD</selectorColor>
+      <alignment>left</alignment>
+      <horizontalMargin>.010</horizontalMargin>
+      <lineSpacing>1.4</lineSpacing>
+      <zIndex>20</zIndex>
+    </textlist>
+    <image name="md_image">
+      <pos>.39 .39</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>.27 .22</maxSize>
+      <zIndex>25</zIndex>
+    </image>
+    <video name="md_video">
+      <pos>.39 .39</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>.27 .22</maxSize>
+      <delay>0.8</delay>
+      <showSnapshotNoVideo>true</showSnapshotNoVideo>
+      <showSnapshotDelay>true</showSnapshotDelay>
+      <zIndex>26</zIndex>
+    </video>
+    <image name="logo, md_thumbnail, md_marquee">
+      <visible>false</visible>
+    </image>
+    <text name="logoText, md_name, md_description, md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount, md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+      <visible>false</visible>
+    </text>
+    <datetime name="md_releasedate, md_lastplayed">
+      <visible>false</visible>
+    </datetime>
+    <rating name="md_rating">
+      <visible>false</visible>
+    </rating>
+    <helpsystem name="help">
+      <pos>0 -1</pos>
+      <textColor>FFFFFFFF</textColor>
+      <iconColor>55DFFFFF</iconColor>
+      <fontPath>./assets/font.ttf</fontPath>
+      <fontSize>0.018</fontSize>
+      <visible>false</visible>
+    </helpsystem>
+  </view>
+  <view name="system">
+    <image name="background" extra="true"><path>./assets/background.jpg</path><pos>0 0</pos><size>1 1</size><zIndex>0</zIndex></image><video name="gp_live_background" extra="true"><path>./assets/live-background.mp4</path><pos>0 0</pos><size>1 1</size><zIndex>1</zIndex><origin>0 0</origin><delay>0</delay><effect>none</effect></video><carousel name="systemcarousel">
+      <type>vertical</type>
+      <pos>.65 .175</pos>
+      <size>.29 .69</size>
+      <logoSize>.24 .08</logoSize>
+      <logoScale>1.1</logoScale>
+      <maxLogoCount>5</maxLogoCount>
+      <color>00000000</color>
+      <zIndex>30</zIndex>
+    </carousel>
+    <text name="systemInfo">
+      <pos>.65 .87</pos>
+      <size>.29 .025</size>
+      <fontPath>./assets/font.ttf</fontPath>
+      <fontSize>0.02</fontSize>
+      <color>B5D8FFFF</color>
+      <alignment>center</alignment>
+    </text>
+  </view>
+</theme>

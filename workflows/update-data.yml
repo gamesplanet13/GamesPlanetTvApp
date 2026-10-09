@@ -1,0 +1,43 @@
+name: Update game and theme catalogs
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['data/games.json', 'themes/index.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: gamesplanet-catalogs
+  cancel-in-progress: true
+jobs:
+  indexes:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/build_indexes.py
+      - name: Save catalogs
+        run: |
+          git config user.name "Games Planet Catalog"
+          git config user.email "catalog@users.noreply.github.com"
+          git add data/games.json themes/index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update game and theme catalogs"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Publish Pages data
+        id: deployment
+        uses: actions/deploy-pages@v4
